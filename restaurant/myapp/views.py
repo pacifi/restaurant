@@ -32,6 +32,6 @@ def nueva_receta(request):
             return HttpResponseRedirect('/recetas')
     else:
         formulario = RecetaForm()
-    return render(request,'recetario/recetaform.html',
+    return render(request,'recetas/recetaform.html',
                               {'formulario':formulario})
 

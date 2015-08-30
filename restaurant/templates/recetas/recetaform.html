@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+	Receta Form
+{% endblock  %}
+
+{% block contenido %}
+	<h2>Comparte una nueva receta</h2>
+	<form method="post" enctype='multipart/form-data' class="form-inline">
+		{% csrf_token %}
+		{{formulario.as_p}}
+		<input class="btn btn-primary" type="submit" value="Registrar">
+	</form>
+		
+{% endblock  %}
