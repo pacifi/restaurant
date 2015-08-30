@@ -8,12 +8,12 @@
 	<link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
 
 </head>
-<body>
+<body>  
 	<header>
 		<ul class="nav nav-tabs nav-justified">
-			<li><a href="/">Inicio</a></li>
-			<li><a href="recetas">Lista Recetas</a></li>
-			<li><a href="sobre">About</a></li>
+			<li><a href="{% url 'inicio' %}">Inicio</a></li>
+			<li><a href="{% url 'lista_rece' %}">Lista Recetas</a></li>
+		<li><a href="{% url 'sobre' %}">About </a> </li>
 			
 		</ul>
 	</header>
@@ -23,7 +23,6 @@
 			
 		{% endblock %}
 	</section>
-
 
 	<script src="{{STATIC_URL}}js/jquery.min.js"></script>
 	<script src="{{STATIC_URL}}js/bootstrap.js"></script>
