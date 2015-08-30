@@ -2,7 +2,7 @@
 
 {% block contenido %}
 	
-	<p>Actualmente tenemos registrados:</p>
+	<p>Actualmente tenemos registrados: <span> {{total}} receta{{total|pluralize}}</span> </p>
 	
 	<ul>{% for dato in recetas %}
 		<li>{{dato.titulo}}</li>
