@@ -10,7 +10,9 @@
 
 	<ul>
 		{% for receta in recetas %}
-		<li><a href="/receta/{{receta.id}}">{{receta.titulo}}</a></li>
+		<li><a href="/receta/{{receta.id}}">{{receta.titulo}}</a>
+		<img src="{{MEDIA_URL}}{{receta.imagen}}" width="100" alt="">	
+		</li>
 		{% endfor %}
 	</ul>
 {% endblock  %}
