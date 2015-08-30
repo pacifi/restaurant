@@ -10,9 +10,19 @@
 </head>
 <body>
 	<header>
-		<ul class="nav "></ul>
+		<ul class="nav navbar-nav">
+			<li><a href="/">Inicio</a></li>
+			<li><a href="recetas">Lista Recetas</a></li>
+			<li><a href="sobre">About</a></li>
+			
+		</ul>
 	</header>
 	
+	<section>
+		{% block contenido %}
+			
+		{% endblock %}
+	</section>
 
 
 	<script src="{{STATIC_URL}}js/jquery.min.js"></script>
