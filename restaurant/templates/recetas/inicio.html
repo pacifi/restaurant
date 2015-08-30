@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+	
+	<p>Actualmente tenemos registrados:</p>
+	
+	<ul>{% for dato in recetas %}
+		<li>{{dato.titulo}}</li>
+
+	{% endfor %}
+	</ul>
+
+{% endblock  %}
