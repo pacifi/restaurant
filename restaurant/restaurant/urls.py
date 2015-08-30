@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sobre/$','myapp.views.sobre'),
     url(r'^bebidas/$','myapp.views.lista_bebidas'),
+    url(r'^$','myapp.views.inicio'),
 ]
